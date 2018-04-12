@@ -50,6 +50,7 @@ body{
     
     #flag-container{
         width: 100%;
+        box-sizing: border-box;
     }
     
     .flag-element{
