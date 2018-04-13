@@ -1,6 +1,7 @@
 body{
     background: hsl(0, 0%, 90%);
     margin: 0;
+    font: 16px 'Poppins', Helvetica, Sans-serif;
 }
 
 .flag-element{
@@ -8,8 +9,6 @@ body{
 }
 
 #flag-container{
-    position: absolute;
-    
     width: 25vw;
     height: 30vh;
     min-width: 30vh;
@@ -46,6 +45,23 @@ body{
     background-size:10px 10px;
 }
 
+#menu-container{
+    font-size: 1.5em;
+    font-weight: 500;
+    
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    width: 25vw;
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+}
+
+#menu-container li{
+    border-bottom: 2px solid #000;
+    padding-left: 5px;
+}
+
 @media screen and (max-width: 800px) {
     
     #flag-container{
@@ -55,6 +71,17 @@ body{
     
     .flag-element{
         border: 3px solid #000;
+    }
+    
+    #menu-container{
+        box-sizing: border-box;
+        width: 100%;
+        border-right: 3px solid #000;
+        border-left: 3px solid #000;
+    }
+    
+    #menu-container li{
+        border-bottom: 3px solid #000;
     }
     
 }
