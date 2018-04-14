@@ -18,7 +18,7 @@
 
 <div id="menu-container">
     <ol>
-        <li style="height: 100%; min-height: 70px;"><a href="#anism" onclick="menuClick(1);">Anism</a></li>
+        <li style="height: 100%; min-height: 0;"><a href="#anism" onclick="menuClick(1);">Anism</a></li>
         <li><a href="#go-anist" onclick="menuClick(2);">Go Anist</a></li>
         <li><a href="#get-involved" onclick="menuClick(3);">Get Involved</a></li>
         <li><a href="#whats-anism" onclick="menuClick(4);">What's Anism</a></li>
@@ -30,7 +30,7 @@ function menuClick(index) {
     var e = document.getElementById("menu-container").getElementsByTagName("li");
     
     e[index - 1].style.height = '100%';
-    e[index - 1].style.minHeight = '70px';
+    e[index - 1].style.minHeight = '0';
     
     var i;
     for(i = 0; i < e.length; i++) {
