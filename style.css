@@ -78,6 +78,7 @@ a{
     border-bottom: 2px solid #000;
     padding: 0 5px;
     min-height: 35px;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 800px) {
