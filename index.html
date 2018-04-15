@@ -6,40 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1", user-scalable="no">
     
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
 </head>
 <body>
 
-<div class="flag-element" id="flag-container">
-    <div class="flag-element" id="flag-outter">
-        <div class="flag-element" id="flag-inner"></div>
+<div id="main-left-container">
+    <div id="flag-container" class="flag-element">
+        <div id="flag-outter"class="flag-element">
+            <div id="flag-inner" class="flag-element"></div>
+        </div>
+    </div>
+
+    <div id="menu-container">
+        <ol>
+            <li id="anism-menu" style="height: 100%; min-height: 4.5em;"><a href="#anism">Anism</a></li>
+            <li id="go-anist-menu"><a href="#go-anist">Go Anist</a></li>
+            <li id="get-involved-menu"><a href="#get-involved">Get Involved</a></li>
+            <li id="whats-anism-menu"><a href="#whats-anism">What's Anism</a></li>
+        </ol>
     </div>
 </div>
-
-<div id="menu-container">
-    <ol>
-        <li style="height: 100%; min-height: 4.5em;"><a href="#anism" onclick="menuClick(1);">Anism</a></li>
-        <li><a href="#go-anist" onclick="menuClick(2);">Go Anist</a></li>
-        <li><a href="#get-involved" onclick="menuClick(3);">Get Involved</a></li>
-        <li><a href="#whats-anism" onclick="menuClick(4);">What's Anism</a></li>
-    </ol>
+    
+<div id="main-right-container" class="right-element not-mobile">
+    <div id="anism" class="reader-container" style="display: block;">
+        <div class="reader-item">
+            <h1>Solving our ecological crises means diluting the power of global corporations – not propping them up</h1>
+            <img width="100%" alt="Ile de Paques 1872 by Pierre Loti" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Ile_de_Paques_1872_by_Pierre_Loti.jpg/1024px-Ile_de_Paques_1872_by_Pierre_Loti.jpg"/>
+            <figcaption>Watercolor painting of Easter Island made by Pierre Loti. [Public domain], <a href="https://commons.wikimedia.org/wiki/File:Ile_de_Paques_1872_by_Pierre_Loti.jpg" target="_blank">via Wikimedia Commons</a></figcaption>
+            <blockquote cite="https://www.theguardian.com/sustainable-business/2017/jul/14/circular-economy-not-magical-fix-environmental-woes-global-corporations">To truly flourish, the circular economy needs to be part of a bigger effort to tackle economic growth, wasteful consumerism and undemocratic power structures in the global economy. It needs to be geared to the real needs of all people rather than the excessive consumption of a few, and to be underpinned by more cooperative mechanisms rather than controlled by a small number of powerful companies.</blockquote>
+            <p>On <a href="https://www.theguardian.com/uk/sustainable-business" target="_blank">Guardian Sustainable Business</a>, by Micha Narberhaus and Joséphine von Mitschke-Collande. <a href="https://www.theguardian.com/sustainable-business/2017/jul/14/circular-economy-not-magical-fix-environmental-woes-global-corporations" target="_blank">Read the full article</a>, or <a href="http://onlinelibrary.wiley.com/doi/10.1111/jiec.12545/abstract" target="_blank">read further</a>.</p>
+        </div>
+    </div>
 </div>
-
+    
 <script type="text/javascript">
-function menuClick(index) {
-    var e = document.getElementById("menu-container").getElementsByTagName("li");
+    var place;
     
-    e[index - 1].style.height = '100%';
-    e[index - 1].style.minHeight = '4.5em';
+    function changePage() { //Display selected reader
+        var readers = document.getElementsByClassName('reader-container');
+        place = location.hash.substr(1);
     
-    var i;
-    for(i = 0; i < e.length; i++) {
-        if(i != index - 1) {
-            e[i].style.height = '0';
-            e[i].style.minHeight = '1.5em';
+        for(var i = 0; i < readers.length; i++) {
+            if(readers[i].id == place) {
+                readers[i].style.display = 'block';
+            } else {
+                readers[i].style.display = 'none';
+            }
         }
     }
-}
+    
+    function menuChange() { //Adjust menu entry heights
+        place = location.hash.substr(1);
+        var menuEntry = document.getElementById("menu-container").getElementsByTagName("LI");
+
+        for(var i = 0; i < menuEntry.length; i++) {
+            if(menuEntry[i].id == place + '-menu') {
+                menuEntry[i].style.height = '100%';
+                menuEntry[i].style.minHeight = '4.5em';
+            } else {
+                menuEntry[i].style.height = '0';
+                menuEntry[i].style.minHeight = '1.5em';
+            }
+        }
+    }
+    
+    window.onhashchange = function() {changePage(); menuChange()};
 </script>
     
 </body>

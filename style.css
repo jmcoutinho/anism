@@ -1,3 +1,8 @@
+*{
+    border-width: 2px;
+    border-color: #000;
+}
+
 body{
     background: hsl(0, 0%, 90%);
     margin: 0;
@@ -9,8 +14,28 @@ a{
     text-decoration: none;
 }
 
+h1{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
+
+figcaption{
+    color: hsl(0, 0%, 70%);
+    font-weight: 300;
+    line-height: 1.2em;
+}
+
+/*Left Bar*/
+
+#main-left-container {
+    float:left;
+    width: 25vw;
+    overflow-y: scroll;
+}
+
 .flag-element{
-    border: 2px solid #000;
+    border-style: solid;
 }
 
 #flag-container, #menu-container ol{
@@ -18,7 +43,6 @@ a{
 }
 
 #flag-container{
-    width: 25vw;
     height: 30vh;
     min-width: 30vh;
     
@@ -26,7 +50,6 @@ a{
 }
 
 #flag-outter{
-    width: 100%;
     height: 100%;
     border-radius: 30vh;
     overflow: hidden;
@@ -60,7 +83,6 @@ a{
 }
 
 #menu-container ol{
-    width: 25vw;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -71,34 +93,59 @@ a{
 }
 
 #menu-container li{
-    border-bottom: 2px solid #000;
-    border-right: 2px solid #000;
-    border-left: 2px solid #000;
+    border-style: none solid solid solid;
     
     padding: 0 5px;
     min-height: 1.5em;
     
     overflow: hidden;
+    white-space: nowrap;
 }
+
+
+/*Right Bar*/
+
+#main-right-container{
+    position: absolute;
+    left: 25vw;
+    width: 75vw;
+}
+
+.reader-container{
+    height: 100vh;
+    box-sizing: border-box;
+    border-right-style: solid;
+    overflow-y: scroll;
+}
+
+.reader-item{
+    padding: 50px 50px 15px 50px;
+    border-style: solid none;
+}
+
+.reader-item *{
+    max-width: 640px;
+}
+
+.reader-item a{
+    text-decoration: underline;
+}
+
+
+/*Mobile*/
 
 @media screen and (max-width: 800px) {
     
-    #flag-container{
+    *{
+        border-width: 3px;
+    }
+    
+    .not-mobile{
+        display: none;
+    }
+    
+    #main-left-container{
         width: 100%;
-    }
-    
-    .flag-element{
-        border: 3px solid #000;
-    }
-    
-    #menu-container ol{
-        width: 100%;
-    }
-    
-    #menu-container li{
-        border-bottom: 3px solid #000;
-        border-right: 3px solid #000;
-        border-left: 3px solid #000;
     }
     
 }
