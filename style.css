@@ -26,6 +26,10 @@ figcaption{
     line-height: 1.2em;
 }
 
+::-webkit-scrollbar{ 
+    display: none;
+}
+
 /*Left Bar*/
 
 #main-left-container {
