@@ -1,8 +1,5 @@
-var place;
-    
-function changePage() { //Display selected reader
+function changePage(place) { //Display selected reader
     var readers = document.getElementsByClassName('reader-container');
-    place = location.hash.substr(1);
 
     var i;
     for (i = 0; i < readers.length; i++) {
@@ -15,13 +12,12 @@ function changePage() { //Display selected reader
     }
 }
 
-function menuChange() { //Adjust menu entry heights
-    place = location.hash.substr(1);
+function menuChange(place) { //Adjust menu entry heights
     var menuEntry = document.getElementById("menu-container").getElementsByTagName("LI");
     
     var i;
-    for(i = 0; i < menuEntry.length; i++) {
-        if(menuEntry[i].id == place + '-menu') {
+    for (i = 0; i < menuEntry.length; i++) {
+        if (menuEntry[i].id == place + '-menu') {
             menuEntry[i].style.height = '100%';
             menuEntry[i].style.minHeight = '4.5em';
         } else {
@@ -31,4 +27,13 @@ function menuChange() { //Adjust menu entry heights
     }
 }
 
-window.onhashchange = function() {changePage(); menuChange();};
+window.onload = function() {
+    if (location.hash) {
+        changePage(location.hash.substr(1));
+        menuChange(location.hash.substr(1));
+    } else {
+        changePage('anism');
+        menuChange('anism');
+    }
+}
+window.onhashchange = function() {changePage(location.hash.substr(1)); menuChange(location.hash.substr(1));}
