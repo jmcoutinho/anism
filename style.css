@@ -14,27 +14,37 @@ a{
     text-decoration: none;
 }
 
+p, h1, h2{
+    margin: 1em 0;
+}
+
 h1{
     font-size: 1.2em;
     font-weight: 500;
-    margin: 0 0 15px 0;
 }
 
 h2{
     font-size: 1em;
     font-weight: 500;
-    margin: 0 0 15px 0;
     text-decoration: underline;
+}
+
+em{
+    font-style: normal;
+}
+
+blockquote{
+    margin: 1em 2.5em;
+}
+
+figure{
+    margin: 0;
 }
 
 figcaption{
     color: hsl(0, 0%, 70%);
     font-weight: 300;
     line-height: 1.2em;
-}
-
-figure{
-    margin: 0 0 0 20px;
 }
 
 ::-webkit-scrollbar{ 
@@ -136,6 +146,10 @@ figure{
 .reader-item{
     padding: 50px 50px 15px 50px;
     border-style: none none solid none;
+}
+
+.reader-item:first-of-type{
+    border-style: solid none;
 }
 
 .reader-item *{
