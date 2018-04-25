@@ -72,7 +72,7 @@ figcaption{
 
 #flag-container{
     height: 30vh;
-    min-width: 30vh;
+    /*min-width: 30vh;*/
     
     overflow: hidden;
 }
