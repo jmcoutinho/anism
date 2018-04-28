@@ -7,19 +7,25 @@
 	.st1{font-family:'Poppins-Medium';}
 	.st2{font-size:19.2px;}
 </style>
-<polyline class="st0" points="280.9,41.4 273.2,68.6 419,41.4 "/>
-<rect x="231" y="1" class="st0" width="99.9" height="34.4"/>
-<rect x="369.1" y="1" class="st0" width="99.9" height="34.4"/>
-<text transform="matrix(1 0 0 1 238.3078 25.2915)" class="st1 st2">Animism</text>
-<rect x="1" y="1" class="st0" width="179.9" height="34.4"/>
-<text transform="matrix(1 0 0 1 8.3078 25.2915)" class="st1 st2">Material Respect</text>
+<polyline class="st0" points="275,42.3 267.2,67.6 419,42.4 "/>
+<g>
+	<rect x="225" y="1" class="st0" width="99.9" height="34.4"/>
+	<text transform="matrix(1 0 0 1 232.3476 25.2915)" class="st1 st2">Animism</text>
+</g>
+<g>
+	<rect x="1" y="1" class="st0" width="179.9" height="34.4"/>
+	<text transform="matrix(1 0 0 1 8.3078 25.2915)" class="st1 st2">Material Respect</text>
+</g>
 <rect x="1" y="74.6" class="st0" width="119.9" height="34.4"/>
 <text transform="matrix(1 0 0 1 8.3078 98.8915)" class="st1 st2">Spirituality</text>
-<text transform="matrix(1 0 0 1 377.3482 25.2915)" class="st1 st2">Activism</text>
 <g>
-	<path class="st0" d="M298.2,109h-50c-9.5,0-17.2-7.7-17.2-17.2l0,0c0-9.5,7.7-17.2,17.2-17.2h50c9.5,0,17.2,7.7,17.2,17.2l0,0
-		C315.4,101.3,307.7,109,298.2,109z"/>
-	<text transform="matrix(1 0 0 1 242.977 98.4406)" class="st1 st2">Anism</text>
+	<rect x="369.1" y="1" class="st0" width="99.9" height="34.4"/>
+	<text transform="matrix(1 0 0 1 377.3482 25.2915)" class="st1 st2">Activism</text>
 </g>
-<polyline class="st0" points="190.9,18.2 220,18.2 130.9,91.8 "/>
+<g>
+	<path class="st0" d="M292.2,109h-50c-9.5,0-17.2-7.7-17.2-17.2l0,0c0-9.5,7.7-17.2,17.2-17.2h50c9.5,0,17.2,7.7,17.2,17.2l0,0
+		C309.4,101.3,301.7,109,292.2,109z"/>
+	<text transform="matrix(1 0 0 1 237.0169 98.4406)" class="st1 st2">Anism</text>
+</g>
+<polyline class="st0" points="187.9,18.2 218,18.2 127.9,91.8 "/>
 </svg>
