@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 240 110" style="enable-background:new 0 0 240 110;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st1{font-family:'Poppins-Medium';}
+	.st2{font-size:19.2px;}
+</style>
+<polyline class="st0" points="50.9,41.4 43.2,68.2 189,41.4 "/>
+<rect x="1" y="1" class="st0" width="99.9" height="34.4"/>
+<rect x="139.1" y="1" class="st0" width="99.9" height="34.4"/>
+<text transform="matrix(1 0 0 1 8.3078 25.2915)" class="st1 st2">Animism</text>
+<text transform="matrix(1 0 0 1 147.3482 25.2915)" class="st1 st2">Activism</text>
+<g>
+	<path class="st0" d="M68.2,108.6h-50C8.7,108.6,1,100.9,1,91.4l0,0c0-9.5,7.7-17.2,17.2-17.2h50c9.5,0,17.2,7.7,17.2,17.2l0,0
+		C85.4,100.9,77.7,108.6,68.2,108.6z"/>
+	<text transform="matrix(1 0 0 1 12.977 98.0406)" class="st1 st2">Anism</text>
+</g>
+</svg>
