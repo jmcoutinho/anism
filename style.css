@@ -50,8 +50,19 @@ figcaption{
     line-height: 1.2em;
 }
 
+ul{
+    list-style-type: none;
+}
+
 ::-webkit-scrollbar{ 
     display: none;
+}
+
+.button{
+    background: none;
+    cursor: pointer;
+    font: inherit;
+    border-radius: 20px;
 }
 
 /*Left Bar*/
