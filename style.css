@@ -60,6 +60,23 @@ ul{
     display: none;
 }
 
+.patt-dots{
+    background-image:
+        radial-gradient(#000 25%, transparent 0), 
+        radial-gradient(#000 25%, transparent 0);
+    background-size:10px 10px;
+    background-position: 0 0, 5px 5px;
+}
+
+.patt-stripes{
+    background-color: hsl(0, 0%, 90%);
+    background-image:
+        repeating-linear-gradient(135deg, #000, #000 17%, transparent 17%, transparent 50%
+        );
+    background-size:10px 10px;
+}
+
+
 /*Left Bar*/
 
 #main-left-container {
@@ -92,23 +109,11 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    background-image:
-        radial-gradient(#000 25%, transparent 0), 
-        radial-gradient(#000 25%, transparent 0);
-    background-size:10px 10px;
-    background-position: 0 0, 5px 5px;
 }
 
 #flag-inner{
     width: 40%;
     height: 50%;
-    
-    background-color: hsl(0, 0%, 90%);
-    background-image:
-        repeating-linear-gradient(135deg, #000, #000 17%, transparent 17%, transparent 50%
-        );
-    background-size:10px 10px;
 }
 
 #menu-container{
@@ -168,6 +173,42 @@ ul{
 
 .reader-item a{
     text-decoration: underline;
+}
+
+.p-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.p-row p:first-of-type{
+    margin: 0;
+}
+
+.p-row-left{margin-right: 1.5em;} .p-row-right{margin-left: 1.5em;}
+
+.boxed{
+    border-style: solid;
+    padding: 0 0.5em;
+}
+
+.symbol-style-box{
+    border-style: solid;
+    width: 1.5em; height: 1.5em;
+}
+
+#personal-video{
+    height: 320px;
+    border-style: solid;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#personal-video-button{
+    border-color: hsl(0, 0%, 90%);
+    color: hsl(0, 0%, 90%);
+    text-decoration: none;
 }
 
 

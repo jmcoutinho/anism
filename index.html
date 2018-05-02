@@ -8,6 +8,7 @@
 
     
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
 </head>
 <body>
@@ -15,14 +16,14 @@
 <!--start left menu-->
 <div id="main-left-container">
     <div id="flag-container" class="flag-element">
-        <div id="flag-outter"class="flag-element">
-            <div id="flag-inner" class="flag-element"></div>
+        <div id="flag-outter"class="flag-element patt-dots">
+            <div id="flag-inner" class="flag-element patt-stripes"></div>
         </div>
     </div>
 
     <div id="menu-container">
         <ol>
-            <li id="anism-menu" style="height: 100%; min-height: 4.5em;"><a href="#anism">Anism Blog</a></li>
+            <li id="anism-blog-menu" style="height: 100%; min-height: 4.5em;"><a href="#anism-blog">Anism Blog</a></li>
             <li id="go-anist-menu"><a href="#go-anist">Go Anist</a></li>
             <li id="get-involved-menu"><a href="#get-involved">Get Involved</a></li>
             <li id="whats-anism-menu"><a href="#whats-anism">What's Anism</a></li>
@@ -34,8 +35,8 @@
 <!--start right menu-->
 <div id="main-right-container" class="right-element not-mobile">
     
-    <!--start anism page container-->
-    <div id="anism" class="reader-container">
+    <!--start anism-blog page container-->
+    <div id="anism-blog" class="reader-container">
         <!--start economy article-->
         <div class="reader-item">
             <h1>"Solving our ecological crises means diluting the power of global corporations, not propping them up"</h1>
@@ -55,12 +56,16 @@
         <!--start plastic ocean article-->
         <div class="reader-item">
             <h1>Film: A Plastic Ocean</h1>
-            <figure style="margin: 0 1.5em 1em 0; max-width: 25%; float: left;"><img style="max-width: 100%;" alt="A Plastic Ocean film poster" src="https://3x168fxvas-flywheel.netdna-ssl.com/wp-content/uploads/2015/12/APO_1Sheet_small.jpg"><figcaption>Read more on the film and find out how you can watch it <a href="https://plasticoceans.org/" target="_blank">here</a>.</figcaption></figure>
-            <p>The immense side effects of our lack of material respect are becoming all too familiar as we roam down this devastating path of mindless consumerism. Some of the most obvious instances of that are in our oceans; in the synthetic continents of disposed, rarely used more than once, bits and pieces of undead plastic.</p>
-            <p><a href="https://www.imdb.com/title/tt5203824/" target="_blank">A Plastic Ocean</a>, directed by Australian journalist Craig Leeson in 2016, tries at portraying this alarmingly recent reality in an inquiry into the requirements of human development.</p>
+            <div class="p-row">
+                <figure class="p-row-left" style="max-width: 30%;"><img style="max-width: 100%;" alt="A Plastic Ocean film poster" src="https://3x168fxvas-flywheel.netdna-ssl.com/wp-content/uploads/2015/12/APO_1Sheet_small.jpg"><figcaption>Read more on the film and find out how you can watch it <a href="https://plasticoceans.org/" target="_blank">here</a>.</figcaption></figure>
+                <div>
+                    <p>The immense side effects of our lack of material respect are becoming all too familiar as we roam down this devastating path of mindless consumerism. Some of the most obvious instances of that are in our oceans; in the synthetic continents of disposed, rarely used more than once, bits and pieces of undead plastic.</p>
+                    <p><a href="https://www.imdb.com/title/tt5203824/" target="_blank">A Plastic Ocean</a>, directed by Australian journalist Craig Leeson in 2016, tries at portraying this alarmingly recent reality in an inquiry into the requirements of human development.</p>
+                </div>
+            </div>
         </div>
     </div>
-    <!--end anism page container-->
+    <!--end anism-blog page container-->
     
     <!--start go-anist page container-->
     <div id="go-anist" class="reader-container" style="display: none;">
@@ -68,19 +73,51 @@
             <h1>How to Go Anist</h1>
             <h2>Being an Anist</h2>
             <p>Becoming an anist can be outlined in three different stages:</p>
-            <div style="display: flex; flex-direction: row;">
-                <img src="Assets/BecomeDiagram01.png" width="110px" height="165px" style="margin: 0 1.5em 1em 0;">
-                <p style="margin: 0;"><em>a.</em> Consciously noticing and understanding the material entities that surround you – the objects you own, the ones you interact with in your daily life, etc.<br><em>b.</em> Learning to discern an aura within those objects. This is something that might derive from self-reflection: what is it that makes you respect and value them, where does their worth come from?<br><em>c.</em> Employing this aura to augment material entities, generally, amplifying their significance and their lives.</p>
+            <div class="p-row">
+                <img class="p-row-left" src="Assets/BecomeDiagram01.png" width="110px" height="165px">
+                <p><em>a.</em> Consciously noticing and understanding the material entities that surround you – the objects you own, the ones you interact with in your daily life, etc.<br><em>b.</em> Learning to discern an aura within those objects. This is something that might derive from self-reflection: what is it that makes you respect and value them, where does their worth come from?<br><em>c.</em> Employing this aura to augment material entities, generally, amplifying their significance and their lives.</p>
             </div>
             <h2>Practical Examples</h2>
             <!--<button class="button" onclick="randomExample()">New Example</button>-->
-            <p style="max-width: 100%;">Here's one: <span id="pract-example" style="border-radius: 20px; border-style: solid; padding: 0 0.5em;">Click on the link in the next sentence to read some examples.</span><br>Read a <a onclick="randomExample()">new example</a>.</p>
+            <p style="max-width: 100%;">Here's one: <span class="boxed" id="pract-example" style="border-radius: 20px;">Click on the link in the next sentence to read some examples.</span><br>Read a <a onclick="randomExample()">new example</a>.</p>
             <h2>Meet Other Anists</h2>
             <p>Find other people who are interested in material respect and <a href="#get-involved">try to further anism</a> in one of our street campaigns:</p>
-            <p style="border-style: solid; padding: 0 0.5em;">No anist events are currently scheduled. <a href="#get-involved">Organize your own</a>.</p>
+            <p class="boxed">No anist events are currently scheduled. You can <a href="#get-involved">organize your own</a>.</p>
         </div>
     </div>
     <!--end go-anist page container-->
+    
+    <!--start get-involved page container-->
+    <div id="get-involved" class="reader-container" style="display: none;">
+        <div class="reader-item">
+            <h1>We're Glad You're Here!</h1>
+            <div id="personal-video">
+                <a id="personal-video-button" class="boxed" onclick="personalVideo();">Create Your Personalized Video</a>
+            </div>
+            <p>Click the button above in case you'd like to watch a personalized video to better understand why your help could be important for anism.<br>Please understand that to do so we'll need to ask you for permission to access your Facebook public info, likes, photos and ad profile.</p>
+            <p>Keep reading if you'd like to get involved.</p>
+        </div>
+        <div class="reader-item">
+            <h1>Run Your Own Anist Actions</h1>
+            <h2>Make the Symbol Your Own</h2>
+            <div class="p-row">
+                <img class="p-row-left" src="Assets/GetDiagram01.svg" alt="arrow" width="35px" height="35px" id="action-arrow">
+                <div>
+                    <div class="p-row">
+                        <div class="patt-dots symbol-style-box p-row-left" style="margin-bottom: 1em;"></div>
+                        <p>Material, colour or surface 1.</p>
+                    </div>
+                    <div class="p-row">
+                        <div class="patt-stripes symbol-style-box p-row-left"></div>
+                        <p>Surface, colour or material 2.</p>
+                    </div>
+                </div>
+            </div>
+            <p>The shape's proportions aren't fixed either, as you'll notice if you resize your browser window.<br>All that matters is that the shape inside is a box, the one outside has rounded edges, and that there is a distinction between the two different surfaces.</p>
+            <p>You can also take a look at how some other anists have appropriated it in the past, in case you need inspiration:</p>
+        </div>
+    </div>
+    <!--end get-involved page container-->
     
     <!--start whats-anism page container-->
     <div id="whats-anism" class="reader-container" style="display: none;">
@@ -88,7 +125,7 @@
             <h1>The History of Anism</h1>
             <img src="Assets/ManifestoDiagram01.png" width="390">
             <h2>Introduction</h2>
-            <figure style="margin: 0 0 0 1.5em; max-width: 30%; float: right;"><img alt="Féticheurs Abomey, 1912" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/F%C3%A9ticheurs-Abomey-1912.jpg" style="max-width: 100%;"><figcaption>By François-Edmond Fortier [Public domain], <a href="https://commons.wikimedia.org/wiki/File:F%C3%A9ticheurs-Abomey-1912.jpg" target="_blank">via Wikimedia Commons</a></figcaption></figure>
+            <figure class="p-row-right" style="max-width: 30%; float: right;"><img alt="Féticheurs Abomey, 1912" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/F%C3%A9ticheurs-Abomey-1912.jpg" style="max-width: 100%;"><figcaption>By François-Edmond Fortier [Public domain], <a href="https://commons.wikimedia.org/wiki/File:F%C3%A9ticheurs-Abomey-1912.jpg" target="_blank">via Wikimedia Commons</a></figcaption></figure>
             <p>Anism is a new movement, but its ideals have been around for a long while. They were inherent to the beliefs and mythologies that guided the indigenous peoples that populated the lands we now inhabit. In fact, they were included in some of the patterns most commonly found by the Anthropologists who coined them under the term 'animism'.</p>
             <h2>Animism</h2>
             <p>Animism, in its own rights, is one of Anthropology's earliest concepts, as conceived by Sir Edward Tylor, the creator of its currently accepted definition.<br>It can be described as the belief that all material entities possess a 'distinct spiritual essence'. That the division between physical and spiritual is tenuous, all substantial matter requiring an equivalent degree of respect and consideration.</p>

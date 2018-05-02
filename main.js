@@ -53,6 +53,13 @@ function randomExample() { //Display random practical example in go anist page
     document.getElementById('pract-example').innerHTML = exampleList[Math.floor(Math.random() * exampleList.length)];
 }
 
+function personalVideo() { //Become an anist page video
+    var videoButton = document.getElementById('personal-video-button');
+    videoButton.innerHTML = 'This feature will be available soon.';
+    videoButton.style.cursor = 'default';
+    videoButton.style.borderStyle = 'none';
+}
+
 //Add random practical example on page load
 window.onload = randomExample();
 
@@ -62,8 +69,8 @@ window.onload = function() {
         changePage(location.hash.substr(1));
         menuChange(location.hash.substr(1));
     } else {
-        changePage('anism');
-        menuChange('anism');
+        changePage('anism-blog');
+        menuChange('anism-blog');
     }
 }
 
