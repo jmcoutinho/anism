@@ -54,10 +54,25 @@ figcaption{
 
 ul{
     list-style-type: none;
+    border-style: solid;
+    padding: 0;
+}
+
+ul li, .boxed{
+    padding: 0 0.5em;
+    border-bottom-style: solid;
+}
+
+ul li:last-of-type{
+    border-bottom-style: none;
 }
 
 ::-webkit-scrollbar{ 
     display: none;
+}
+
+.boxed{
+    border-style: solid;
 }
 
 .patt-dots{
@@ -186,11 +201,6 @@ ul{
 
 .p-row-left{margin-right: 1.5em;} .p-row-right{margin-left: 1.5em;}
 
-.boxed{
-    border-style: solid;
-    padding: 0 0.5em;
-}
-
 .symbol-style-box{
     border-style: solid;
     width: 1.5em; height: 1.5em;
@@ -209,6 +219,10 @@ ul{
     border-color: hsl(0, 0%, 90%);
     color: hsl(0, 0%, 90%);
     text-decoration: none;
+}
+
+#community-list a{
+    float: right;
 }
 
 
