@@ -27,6 +27,7 @@ function menuChange(place) { //Adjust menu entry heights
     }
 }
 
+<<<<<<< HEAD
 function randomExample() { //Display random practical example in go anist page
     var exampleList = [
         'Question "do I really need this ______?" often.',
@@ -64,6 +65,8 @@ function personalVideo() { //Become an anist page video
 window.onload = randomExample();
 
 //Load page from url hash
+=======
+>>>>>>> parent of 572fc28... Go anist page contents
 window.onload = function() {
     if (location.hash) {
         changePage(location.hash.substr(1));
@@ -73,6 +76,4 @@ window.onload = function() {
         menuChange('anism-blog');
     }
 }
-
-//Change page with hash change
 window.onhashchange = function() {changePage(location.hash.substr(1)); menuChange(location.hash.substr(1));}
