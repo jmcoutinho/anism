@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 110 165" style="enable-background:new 0 0 110 165;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#010101;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:#010101;}
+	.st2{font-family:'Poppins-Medium';}
+	.st3{font-size:16px;}
+</style>
+<rect x="29.9" y="4" class="st0" width="40" height="30"/>
+<path class="st0" d="M44.9,54h10c8.3,0,15,6.7,15,15v0c0,8.3-6.7,15-15,15h-10c-8.3,0-15-6.7-15-15v0C29.9,60.7,36.6,54,44.9,54z"/>
+<rect x="29.9" y="119" class="st0" width="40" height="30"/>
+<path class="st0" d="M31,104h37.8c16.6,0,30,13.4,30,30v0c0,16.6-13.4,30-30,30H31c-16.6,0-30-13.4-30-30v0C1,117.4,14.4,104,31,104
+	z"/>
+<text transform="matrix(1 0 0 1 80.5561 8.935)" class="st1 st2 st3">a.</text>
+<text transform="matrix(1 0 0 1 76.5564 58.9341)" class="st1 st2 st3">b.</text>
+<text transform="matrix(1 0 0 1 97.5481 108.9349)" class="st1 st2 st3">c.</text>
+</svg>
